@@ -170,6 +170,10 @@ define(['./spotlight', 'focusManager', 'pluginManager', 'cardBuilder', './../ski
         element.querySelector('.allSeriesCard').addEventListener('click', function () {
             Emby.Page.show(pluginManager.mapRoute(skinInfo.id, 'tv/tv.html?tab=2&parentId=' + parentId + "&serverId=" + serverId));
         });
+        
+        element.querySelector('.wideSpotlightCard').addEventListener('click', function () {
+            Emby.Page.show(pluginManager.mapRoute(skinInfo.id, 'tv/tv.html?tab=2&parentId=' + parentId + "&serverId=" + serverId));
+        });
 
         element.querySelector('.tvUpcomingCard').addEventListener('click', function () {
             Emby.Page.show(pluginManager.mapRoute(skinInfo.id, 'tv/tv.html?tab=3&parentId=' + parentId + "&serverId=" + serverId));
