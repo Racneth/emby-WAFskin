@@ -135,10 +135,6 @@ define(['./spotlight', 'focusManager', 'pluginManager', 'cardBuilder', './../ski
                 maxWidth: 600
             };
 
-            if (items.length > 0) {
-                element.querySelector('.tvFavoritesCard .cardImage').style.backgroundImage = "url('" + Emby.Models.backdropImageUrl(items[0], imgOptions) + "')";
-            }
-
             if (items.length > 1) {
                 element.querySelector('.allSeriesCard .cardImage').style.backgroundImage = "url('" + Emby.Models.backdropImageUrl(items[1], imgOptions) + "')";
             }
@@ -177,10 +173,6 @@ define(['./spotlight', 'focusManager', 'pluginManager', 'cardBuilder', './../ski
 
         element.querySelector('.tvUpcomingCard').addEventListener('click', function () {
             Emby.Page.show(pluginManager.mapRoute(skinInfo.id, 'tv/tv.html?tab=3&parentId=' + parentId + "&serverId=" + serverId));
-        });
-
-        element.querySelector('.tvFavoritesCard').addEventListener('click', function () {
-            Emby.Page.show(pluginManager.mapRoute(skinInfo.id, 'tv/tv.html?tab=4&parentId=' + parentId + "&serverId=" + serverId));
         });
 
         self.destroy = function () {
