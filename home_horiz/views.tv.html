@@ -12,26 +12,7 @@
                     </div>
                 </div>
             </button>
-            <button type="button" class="card backdropCard tvFavoritesCard card-static" data-type="genres">
-                <div class="cardImageContainer cardBox card-focuscontent">
 
-                    <div class="cardImage coveredImage coveredImage-noScale"></div>
-
-                    <div class="innerCardFooter">
-                        <div class="cardText">${Favorites}</div>
-                    </div>
-                </div>
-            </button>
-            <button type="button" class="card squareCard tvUpcomingCard card-static" data-type="genres">
-                <div class="cardImageContainer coveredImage cardBox coveredImage-noScale card-focuscontent">
-
-                    <i class="cardImageIcon md-icon">&#xE916;</i>
-
-                    <div class="innerCardFooter">
-                        <div class="cardText">${Upcoming}</div>
-                    </div>
-                </div>
-            </button>
         </div>
                 
     </div>
@@ -44,6 +25,13 @@
     </div>
 </div>
 
+<div class="horizontalSection latestSection hide">
+    <div class="sectionTitle">${LatestEpisodes}</div>
+    <div is="emby-itemscontainer" class="itemsContainer">
+
+    </div>
+</div>
+
 <div class="horizontalSection nextUpSection hide">
     <div class="sectionTitle">${NextUp}</div>
     <div is="emby-itemscontainer" class="itemsContainer">
@@ -51,12 +39,7 @@
     </div>
 </div>
 
-<div class="horizontalSection latestSection hide">
-    <div class="sectionTitle">${LatestEpisodes}</div>
-    <div is="emby-itemscontainer" class="itemsContainer">
 
-    </div>
-</div>
 <div>
     <button type="button" class="card block wideSpotlightCard card-static">
             <div class="cardImageContainer cardBox card-focuscontent">
