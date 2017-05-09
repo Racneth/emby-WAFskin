@@ -3,6 +3,6 @@ define([], function () {
 
     return {
         id: 'wafskin',
-        name: 'WAF Skin'
+        name: 'Family Skin'
     };
 });
