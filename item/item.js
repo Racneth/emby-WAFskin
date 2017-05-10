@@ -679,7 +679,7 @@ define(['itemContextMenu', 'loading', './../skininfo', 'datetime', 'scrollHelper
         }
 
         function renderPeopleItems(view, item, apiClient) {
-
+            return;
             var section = view.querySelector('.peopleItems');
 
             if (item.Type !== "Person") {
@@ -780,7 +780,7 @@ define(['itemContextMenu', 'loading', './../skininfo', 'datetime', 'scrollHelper
         }
 
         function renderPersonSection(view, item, element, type, apiClient) {
-
+            return;
             switch (type) {
 
                 case 'Movie':
@@ -878,7 +878,7 @@ define(['itemContextMenu', 'loading', './../skininfo', 'datetime', 'scrollHelper
         }
 
         function loadPeopleItems(element, item, type, query, listOptions, apiClient) {
-
+            return;
             query.SortBy = "SortName";
             query.SortOrder = "Ascending";
             query.Recursive = true;
@@ -1119,7 +1119,7 @@ define(['itemContextMenu', 'loading', './../skininfo', 'datetime', 'scrollHelper
         }
 
         function renderPeople(view, item) {
-
+            return;
             var section = view.querySelector('.peopleSection');
 
             var people = item.People || [];
@@ -1147,7 +1147,7 @@ define(['itemContextMenu', 'loading', './../skininfo', 'datetime', 'scrollHelper
         }
 
         function renderExtras(view, item, apiClient) {
-
+            return;
             var section = view.querySelector('.extrasSection');
 
             if (!item.SpecialFeatureCount) {
@@ -1205,7 +1205,7 @@ define(['itemContextMenu', 'loading', './../skininfo', 'datetime', 'scrollHelper
         }
 
         function renderMoreFrom(view, item, apiClient) {
-
+            return;
             var section = view.querySelector('.moreFromSection');
             if (item.Type !== 'MusicAlbum' || !item.AlbumArtists || !item.AlbumArtists.length) {
                 section.classList.add('hide');
@@ -1242,7 +1242,7 @@ define(['itemContextMenu', 'loading', './../skininfo', 'datetime', 'scrollHelper
         }
 
         function renderSimilar(view, item, apiClient) {
-
+            return;
             var options = {
                 Limit: 12,
                 UserId: apiClient.getCurrentUserId(),
